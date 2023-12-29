@@ -111,13 +111,12 @@ const ContactForm = (props: Props) => {
               <span className="ml-2 text-base">No</span>
             </label>
           </div>
-          {errors.neednda && (
-            <div className="text-primary text-sm">
-              {errors.neednda!.message}
-            </div>
-          )}
         </div>
-
+        {errors.neednda && (
+          <div className="text-primary pb-4  text-right text-xs">
+            {errors.neednda!.message}
+          </div>
+        )}
         <div>
           <label className="flex ">
             <input
