@@ -47,8 +47,7 @@ const AutoScrolledCompanies = (props: Props) => {
               priority
               alt={company.alt}
               src={company.src}
-              width={155}
-              height={70}
+              fill
               className="h-auto w-auto object-cover object-center"
             />
           </div>
@@ -59,10 +58,10 @@ const AutoScrolledCompanies = (props: Props) => {
             className="relative h-[70px]  w-[155px]    "
           >
             <Image
+              priority
               alt={company.alt}
               src={company.src}
-              width={155}
-              height={70}
+              fill
               className="h-auto w-auto object-cover object-center"
             />
           </div>
