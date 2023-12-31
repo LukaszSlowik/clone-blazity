@@ -17,15 +17,15 @@ const CircuralAnimation = (props: Props) => {
           <b>composable architecture </b> to create powerful web experiences
         </p>
       </div>
-      <div className="animate-circular absolute inset-0 m-auto h-24 w-24 overflow-hidden rounded-full bg-orange-400/70 blur-lg filter "></div>
+      <div className="animate-circular absolute inset-0 m-auto h-24 w-24 overflow-hidden rounded-full bg-orange-400/60 blur-xl filter "></div>
       <div
-        className="animate-circular3 absolute inset-0 m-auto h-24 w-24 overflow-hidden rounded-full bg-white blur-2xl filter "
+        className="animate-circular3 absolute inset-0 m-auto h-24 w-24 overflow-hidden rounded-full bg-white blur-xl filter "
         // style={{
         //   animationDelay: "4s",
         // }}
       ></div>
       <div
-        className="animate-circular2 absolute inset-0 m-auto h-24 w-24 overflow-hidden rounded-full bg-orange-400/70 blur-lg filter"
+        className="animate-circular2 absolute inset-0 m-auto h-24 w-24 overflow-hidden rounded-full bg-orange-400/60 blur-xl filter"
         // style={{
         //   animationDelay: "8s",
         // }}
