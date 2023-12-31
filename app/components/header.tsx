@@ -12,10 +12,11 @@ const Header = (props: Props) => {
   return (
     <div className="fixed left-0 right-0 top-0 z-[999] h-[70px] max-w-[100dvw]  border-[#dddfe0] bg-white">
       <SectionWrapper className="h-full">
-        <div className="flex h-full items-center justify-between gap-2 border-b">
+        <div className="flex h-full items-center justify-between gap-2 ">
           <div className="flex items-center justify-center max-[300px]:hidden ">
             <Link href={"/"}>
               <Image
+                priority
                 src="/svgs/logo.svg"
                 alt="Picture of the author"
                 width={120}

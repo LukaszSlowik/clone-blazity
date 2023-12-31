@@ -26,8 +26,6 @@ const Navigation = (props: Props) => {
           <li className={cn(`group h-full  `, showSubMenu && "text-[#ff782c]")}>
             <button
               onMouseEnter={() => setShowSubMenu(true)}
-              // onClick={() => setShowSubMenu(!showSubMenu)}
-              //onMouseLeave={() => setShowSubMenu(false)}
               className="flex h-full items-center gap-2 "
             >
               <span>Services</span>{" "}
@@ -52,17 +50,6 @@ const Navigation = (props: Props) => {
           </li>
           <li className=" flex h-full items-center ">
             <Link
-              href={"/case-studies"}
-              className={cn(
-                `hover:text-primary`,
-                // pathname === "/case-studies" && "text-primary",
-              )}
-            >
-              Our Work
-            </Link>
-          </li>
-          <li className=" flex h-full items-center ">
-            <Link
               href={"/careers"}
               className={cn(
                 `hover:text-primary`,
@@ -73,22 +60,28 @@ const Navigation = (props: Props) => {
             </Link>
           </li>
           <li className=" flex h-full items-center ">
-            <Link
-              href={"/open-source"}
-              className={cn(
-                `hover:text-primary`,
-                pathname === "/open-source" && "text-primary",
-              )}
+            <button
+              className="hover:text-primary"
+              onClick={() => setOpen(true)}
+            >
+              Our Work
+            </button>
+          </li>
+
+          <li className=" flex h-full items-center ">
+            <button
+              className="hover:text-primary"
+              onClick={() => setOpen(true)}
             >
               Open Source
-            </Link>
+            </button>
           </li>
           <li className=" flex h-full items-center ">
             <button
               className="hover:text-primary"
               onClick={() => setOpen(true)}
             >
-              Blog{" "}
+              Blog
             </button>
           </li>
         </ul>

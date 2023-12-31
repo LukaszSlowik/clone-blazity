@@ -9,7 +9,7 @@ const Clutch = (props: Props) => {
     <div className="shadow-clutch mx-auto my-16 max-w-[700px] rounded-3xl bg-[#30302fd9] p-2 font-bold text-white max-sm:mx-2 sm:p-8">
       <div className="flex flex-col gap-4">
         <div>
-          <p className="text-2xl">
+          <p className="text-2xl max-sm:text-center">
             Our Clutch reviews <span className="text-primary">say it all!</span>
           </p>
         </div>
@@ -41,14 +41,14 @@ const Clutch = (props: Props) => {
                   ))}
                 </div>
               </div>
-              <div className="font-normal text-[#a0a0a0] ">
+              <div className="font-normal text-[#a0a0a0]  ">
                 Based on 18 clients reviews
               </div>
             </div>
           </div>
           <div>
             <Link href={"/#"}>
-              <div className="rounded-3xl border border-white px-6 py-4 transition-all hover:bg-white hover:font-semibold hover:text-black">
+              <div className="rounded-3xl border border-white px-6 py-4 transition-all hover:bg-white hover:font-semibold hover:text-black max-sm:text-center">
                 See all Reviews on Clutch
               </div>
             </Link>

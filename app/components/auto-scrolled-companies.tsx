@@ -36,8 +36,8 @@ const companiesArray = [
 
 const AutoScrolledCompanies = (props: Props) => {
   return (
-    <div className="mx-auto mt-16 w-[95vw]   overflow-x-hidden">
-      <div className="animate-scroll  ml-0 flex w-fit  flex-nowrap gap-4 overflow-x-hidden ">
+    <div className="mx-0 mt-16    overflow-hidden">
+      <div className="animate-scroll  ml-0 mr-0 flex w-fit  flex-nowrap gap-4 overflow-x-hidden ">
         {companiesArray.map((company) => (
           <div
             key={`1-${company.alt}`}
@@ -48,7 +48,7 @@ const AutoScrolledCompanies = (props: Props) => {
               alt={company.alt}
               src={company.src}
               fill
-              className="h-auto w-auto object-cover object-center"
+              className=" object-cover object-center"
             />
           </div>
         ))}
@@ -62,7 +62,7 @@ const AutoScrolledCompanies = (props: Props) => {
               alt={company.alt}
               src={company.src}
               fill
-              className="h-auto w-auto object-cover object-center"
+              className=" object-cover object-center"
             />
           </div>
         ))}
